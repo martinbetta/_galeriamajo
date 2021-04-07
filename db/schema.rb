@@ -10,9 +10,75 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_04_07_092300) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dibujos", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_foto"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "fotos", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_foto"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "graficas", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_foto"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "libros", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_foto"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pinturas", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_foto"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "detail"
+    t.string "url_video"
+    t.string "category"
+    t.string "size"
+    t.string "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end

@@ -1,0 +1,2 @@
+class Dibujo < ApplicationRecord
+end
