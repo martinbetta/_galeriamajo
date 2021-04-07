@@ -1,0 +1,44 @@
+.nav{
+  display:flex;
+  margin-top: 2vh;
+  flex-flow: space-evenly;
+  position: relative;
+    .home_icons {
+    font-size: 3vw;
+    margin-left: 1vh;
+      .fa-instagram{
+        color: black;
+      }
+      .fa-facebook{
+        color: black;
+      }
+    }
+    .text-inicio{
+      position: absolute;
+      font-size: 1vw;
+      margin-left: 59vw;
+      padding: 1vw;
+      background-color: #FFFFFF;
+      text-align: center;
+    .btn-home{
+      font-size: 1.7vw;
+    }
+    }
+    .text-contacto{
+      position: absolute;
+      font-size: 1vw;
+      margin-left:67vw;
+      padding: 1vw;
+      background-color: #FFFFFF;
+
+
+      .btn-home{
+      font-size: 1.7vw;
+
+    }
+  }
+.line-nav {
+  color: black;
+  margin-top: 3vw;
+}
+}
