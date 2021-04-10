@@ -1,0 +1,20 @@
+<div class ="container">
+
+<p>Pinturas - Serie: El Silencio Vacio</p>
+
+  <div class="category-index">
+
+      <% @pinturas.each do |pintura| %>
+      <li>
+      <ul><%=pintura.title  %> </ul>
+      <ul><%= cl_image_tag pintura.photo.key, height: 300, width: 300, crop: :fill %></ul>
+      <ul><%=pintura.detail  %></ul>
+      <ul><%=pintura.size %></ul>
+    </li>
+
+  <% end %>
+
+
+</div>
+
+</div>
