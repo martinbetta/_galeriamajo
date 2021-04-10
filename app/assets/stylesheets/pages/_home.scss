@@ -134,3 +134,18 @@ p {
   }
 }
 
+
+.category-index{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row dense;
+  grid-gap: 3px;
+  grid-auto-rows: minmax(200px, auto);
+  border-radius: 10px;
+  list-style:none
+}
+.imageset{
+  margin-right: 20000px;
+
+}
+
